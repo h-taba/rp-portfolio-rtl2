@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+{% load static %}
+<html id="html" dir="rtl">
+<head><title>
+	webapp1
+</title>
+	<head>
+		<meta charset="utf-8">
+		<title>Django </title>
+		<link href="{% static 'asset/css/bootstrap.min.css' %}"  rel="stylesheet">
+		<link type="text/css" rel="stylesheet"  href="{% static 'blog/css/blog.css' %}">
+		<link type="text/css" rel="stylesheet"  href="{% static 'asset/css/font/BKoodak.css' %}"' />
+		<link type="text/css" rel="stylesheet"  href="{% static 'asset/css/font/Vazir.css' %}"' />
+		<link type="text/css" rel="stylesheet"  href="{% static 'asset/css/master.rtl.min.css' %}"' />
+		<link type="text/css" rel="stylesheet"  href="{% static 'asset/css/bootstrap.min.css' %}"' />
+		<link type="text/css" rel="stylesheet"  href="{% static 'asset/css/jquery.fancybox.min.css' %}"' />
+		<link type="text/css" rel="stylesheet"  href="{% static 'asset/css/font-awesome.min.css' %}"' />
+		<link type="text/css" rel="stylesheet"  href="{% static 'asset/css/animate.min.css' %}"' />
+		<link type="text/css" rel="stylesheet"  href="{% static 'asset/App_Themes/Arya/Arya-SkinStyle.min.css' %}"' />
+		<link type="text/css" rel="stylesheet"  href="{% static 'asset/App_Themes/Arya/aryavtd.accordion.menu.min.css' %}"' />
+		<link type="text/css" rel="stylesheet"  href="{% static 'asset/App_Themes/Arya/aryavtd.accordion.min.css' %}"' />
+		<link type="text/css" rel="stylesheet"  href="{% static 'asset/App_Themes/Arya/aryavtd.component.min.css' %}"' />
+		<link type="text/css" rel="stylesheet"  href="{% static 'asset/App_Themes/Arya/aryavtd.dialog.min.css' %}"' />
+		<link type="text/css" rel="stylesheet"  href="{% static 'asset/App_Themes/Arya/aryavtd.global.min.css' %}"' />
+		<link type="text/css" rel="stylesheet"  href="{% static 'asset/App_Themes/Arya/aryavtd.metro.min.css' %}"' />
+		<link type="text/css" rel="stylesheet"  href="{% static 'asset/App_Themes/Arya/aryavtd.pStrength.min.css' %}"' />
+		<link type="text/css" rel="stylesheet"  href="{% static 'asset/App_Themes/Arya/bootstrap-theme.min.css' %}"' />
+		<link type="text/css" rel="stylesheet"  href="{% static 'asset/App_Themes/Arya/persianDatepicker-default.min.css' %}"' />
+		<script type="text/javascript" src="{% static 'asset/js/jquery-3.5.1.js' %}"></script> 
+		<script type="text/javascript" src="{% static 'asset/js/popper.min.js' %}"></script>
+		<script type="text/javascript" src="{% static 'asset/js/bootstrap.min.js' %}"></script>
+		<script type="text/javascript" src="{% static 'asset/js/wow.min.js' %}"></script>
+		<script type="text/javascript" src="{% static 'asset/js/aryavtd.kbdutility.min.js' %}"></script>
+		<script type="text/javascript" src="{% static 'asset/js/jquery.fancybox.min.js' %}"></script>
+		<script type="text/javascript" src="{% static 'asset/js/aryavtd.utility.min.js' %}"></script>
+				
+	</head>
+	<body>
+		{% include "base2.html" %}
+		<div class="container">
+			{% block page_content %}{% endblock %}
+		</div>
+	</body>
+</html>
+

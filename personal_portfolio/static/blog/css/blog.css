@@ -1,0 +1,15 @@
+body{
+	direction:rtl;
+}
+h4,li,.card-header, .card-title, .card-text, .card-footer{
+	text-align:right;
+}
+label{
+	float:right;
+}
+.my-5{
+	margin-top:4rem !important;
+}
+h1 a, h2 a ,h1,h2 {
+    color:black;
+}

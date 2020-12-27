@@ -1,0 +1,70 @@
+.pStrength-weak {
+ background-color:#f04124
+}
+.pStrength-medium {
+ background-color:#e99002
+}
+.pStrength-good {
+ background-color:#43ac6a
+}
+.pStrength-strong {
+ background-color:#5bc0de
+}
+#password-meter {
+ height:5px
+}
+#password-hint {
+ padding:0
+}
+.av-pscolor-0 {
+ background-color:#fcfcfc !important;
+ color:#333 !important
+}
+.av-pscolor-1 {
+ background-color:#f04124 !important;
+ color:#fff !important
+}
+.av-pscolor-2 {
+ background-color:#f05238 !important;
+ color:#fff !important
+}
+.av-pscolor-3 {
+ background-color:#f0644c !important;
+ color:#fff !important
+}
+.av-pscolor-4 {
+ background-color:#e99002 !important;
+ color:#fff !important
+}
+.av-pscolor-5 {
+ background-color:#e99b1e !important;
+ color:#fff !important
+}
+.av-pscolor-6 {
+ background-color:#e9a53a !important;
+ color:#fff !important
+}
+.av-pscolor-7 {
+ background-color:#63ac7e !important;
+ color:#fff !important
+}
+.av-pscolor-8 {
+ background-color:#52ac73 !important;
+ color:#fff !important
+}
+.av-pscolor-9 {
+ background-color:#43ac6a !important;
+ color:#fff !important
+}
+.av-pscolor-10 {
+ background-color:#82c9de !important;
+ color:#fff !important
+}
+.av-pscolor-11 {
+ background-color:#6fc5de !important;
+ color:#fff !important
+}
+.av-pscolor-12 {
+ background-color:#5bc0de !important;
+ color:#fff !important
+}

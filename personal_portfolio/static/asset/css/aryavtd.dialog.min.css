@@ -1,0 +1,157 @@
+#av-backscreen {
+ top:0;
+ bottom:0;
+ left:0;
+ right:0;
+ position:fixed;
+ z-index:7777777;
+ display:block;
+ opacity:.7
+}
+.av-bg-black {
+ background-color:#000
+}
+.av-message,
+.av-dialog {
+ background:#fff;
+ position:fixed;
+ margin:0 auto;
+ display:none;
+ z-index:7777778;
+ min-height:120px;
+ min-width:400px;
+ overflow:hidden
+}
+.av-message {
+ border-radius:1rem;
+ text-align:center;
+ -moz-box-shadow:5px 5px 10px 1px rgba(0,0,0,.5);
+ -webkit-box-shadow:5px 5px 10px 1px rgba(0,0,0,.5);
+ -o-box-shadow:5px 5px 10px 1px rgba(0,0,0,.5);
+ box-shadow:5px 5px 10px 1px rgba(0,0,0,.5);
+ max-width:500px
+}
+.av-dialog {
+ border-radius:.25rem;
+ -moz-box-shadow:3px 3px 10px 3px rgba(0,0,0,.3);
+ -webkit-box-shadow:3px 3px 10px 3px rgba(0,0,0,.3);
+ -o-box-shadow:3px 3px 10px 3px rgba(0,0,0,.3);
+ box-shadow:3px 3px 10px 3px rgba(0,0,0,.3)
+}
+.av-dialog .av-title {
+ padding:10px 10px 5px 10px;
+ font-weight:bold;
+ font-size:1.2em;
+ color:#fff
+}
+.av-message .av-body {
+ min-height:60px;
+ font-weight:bold;
+ font-size:1.2em;
+ padding:2rem 1rem;
+ overflow:hidden
+}
+.av-button-row {
+ padding:5px
+}
+.av-button-row>input[type="button"],
+.av-button-row>input[type="submit"] {
+ padding-right:1.5rem;
+ padding-left:1.5rem;
+ margin:0 5px;
+ cursor:pointer
+}
+.av-button-row>input[type="button"]:disabled,
+.av-button-row>input[type="submit"]:disabled {
+ cursor:not-allowed
+}
+.av-message-error .av-title,
+.av-dialog-error .av-title {
+ background-color:#dc3545
+}
+.av-message-warning .av-title,
+.av-dialog-warning .av-title {
+ background-color:#ffc107
+}
+.av-message-question .av-title,
+.av-dialog-question .av-title {
+ background-color:#007bff
+}
+.av-message-information .av-title,
+.av-dialog-information .av-title {
+ background-color:#17a2b8
+}
+.av-message-success .av-title,
+.av-dialog-success .av-title {
+ background-color:#28a745
+}
+.av-message-information::before,
+.av-message-warning::before,
+.av-message-error::before,
+.av-message-question::before,
+.av-message-success::before {
+ display:block;
+ top:2rem;
+ font-family:FontAwesome;
+ font-size:4rem;
+ color:#fff;
+ border-top-left-radius:1rem;
+ border-top-right-radius:1rem
+}
+.av-message .av-title {
+ display:block;
+ color:#fff;
+ padding:10px;
+ text-align:right
+}
+.av-message-error::before {
+ content:'';
+ background-color:#dc3545
+}
+.av-message-warning::before {
+ content:'';
+ background-color:#ffc107
+}
+.av-message-question::before {
+ content:'';
+ background-color:#007bff
+}
+.av-message-information::before {
+ content:'';
+ background-color:#17a2b8
+}
+.av-message-success::before {
+ content:'';
+ background-color:#28a745
+}
+.av-message-error .av-body {
+ color:#8f222d
+}
+.av-message-warning .av-body {
+ color:#b38705
+}
+.av-message-question .av-body {
+ color:#0056b3
+}
+.av-message-information .av-body {
+ color:#0d5f6b
+}
+.av-message-success .av-body {
+ color:#155925
+}
+.av-close {
+ border-radius:.25rem;
+ margin:8px;
+ float:right;
+ width:26px;
+ height:26px;
+ line-height:26px;
+ color:#666;
+ border:1px solid #666;
+ background-color:#f2f2f2;
+ position:relative;
+ font-family:FontAwesome !important;
+ font-size:1.1em;
+ text-align:center;
+ cursor:pointer
+}

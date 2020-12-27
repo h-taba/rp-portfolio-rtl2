@@ -1,0 +1,72 @@
+{% load static %}
+<section>
+    <a id="#page-top"></a>
+    <nav class="abs-navbar navbar navbar-expand-lg navbar-dark bg-arya-brand-color">
+        <a class="navbar-brand" href="{% url 'project_index' %}">  <img src="/static/asset/images/logo-white2.png" height="40"> Django</a>
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="{% url 'project_index' %}">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                    <a class="nav-link" href="{% url 'blog_index' %}">Blog</a>
+                    </li>
+                
+                <li class="nav-item">
+                    <a href="{% url 'project_index' %}" class="nav-link">گالری</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{% url 'project_index' %}" class="nav-link">دانلود</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{% url 'project_index' %}" class="nav-link">تماس با ما</a>
+                </li>
+                
+            </ul>
+            <div class="form-inline my-2 my-lg-0">
+                <div class="nav-item dropdown">
+                    <a class="nav-item nav-link dropdown-toggle ml-md-2" href="{% url 'project_index' %}" id="bd-versions" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">نسخه 4.4.1
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-left" aria-labelledby="bd-versions">
+                        <a class="dropdown-item active" href="https://github.com/mRizvandi/AryaBootstrap" target="_blank">آخرین نسخه 4.4.1</a>
+                        <a class="dropdown-item" href="https://github.com/mRizvandi/AryaBootstrap-4.3.1" target="_blank">نسخه 4.3.1</a>
+                        <a class="dropdown-item" href="https://github.com/mRizvandi/AryaBootstrap-4.0.0" target="_blank">نسخه 4.0.0</a>
+                        <a class="dropdown-item" href="https://github.com/mRizvandi/bootstrap-rtl" target="_blank">نسخه 4 آلفا 6</a>
+                    </div>
+                </div>
+                <ul class="navbar-nav flex-row mr-md-auto d-none d-md-flex nav-icon">
+                    
+                    <li class="nav-item">
+                        <a class="nav-link p-2" href="http://AryaVandidad.com" target="_blank">
+                            <i class="fa fa-fw fa-globe"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-2" href="https://github.com/mRizvandi/AryaBootstrap" target="_blank">
+                            <i class="fa fa-fw fa-github"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-2" href="https://t.me/AryaVandidad" target="_blank">
+                            <i class="fa fa-fw fa-send"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-2" href="https://instagram.com/AryaVandidad" target="_blank">
+                            <i class="fa fa-fw fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-2" href="https://twitter.com/aryavandidad" target="_blank">
+                            <i class="fa fa-fw fa-twitter"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</section>0

@@ -1,0 +1,6 @@
+﻿@font-face {
+  font-family: 'PersianFont';
+  src: url('BKoodak/BKoodakBold.eot?#') format('eot'),  /* IE6–8 */
+       url('BKoodak/BKoodakBold.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+       url('BKoodak/BKoodakBold.ttf') format('truetype');  /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
+}
