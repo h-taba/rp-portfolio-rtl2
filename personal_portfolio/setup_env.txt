@@ -1,0 +1,9 @@
+
+export PRJ1_DB_USER='psqladmin'
+export PRJ1_DB_PASS='Ubub^6yhn'
+
+env 
+python manage.py makemigrations
+python manage.py migrate --database projectsdb
+python manage.py migrate --database blogdb
+python manage.py migrate

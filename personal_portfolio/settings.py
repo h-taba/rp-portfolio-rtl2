@@ -15,10 +15,10 @@ import os
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASE_DIR2 = os.path.dirname(os.path.abspath(__file__))
-print ("\n\n os.path.abspath(__file__ = ",os.path.abspath(__file__))
-print ("\n os.path.dirname(os.path.abspath(__file__)) = ",os.path.dirname(os.path.abspath(__file__)))
-print("\n os.path.dirname(os.path.dirname(os.path.abspath(__file__))) =",os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-print ("BASE_DIR = ",BASE_DIR)
+# print ("\n\n os.path.abspath(__file__ = ",os.path.abspath(__file__))
+# print ("\n os.path.dirname(os.path.abspath(__file__)) = ",os.path.dirname(os.path.abspath(__file__)))
+# print("\n os.path.dirname(os.path.dirname(os.path.abspath(__file__))) =",os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+# print ("BASE_DIR = ",BASE_DIR)
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
@@ -79,13 +79,50 @@ WSGI_APPLICATION = "personal_portfolio.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
-DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": os.path.join(BASE_DIR, "db.sqlite3"),
-    }
-}
+# DATABASES = {
+#     "default": {
+#         "ENGINE": "django.db.backends.sqlite3",
+#         "NAME": os.path.join(BASE_DIR, "db.sqlite3"),
+#     }
+# }
 
+DATABASES_USER =os.getenv("PRJ1_DB_USER")
+DATABASES_PASS =os.getenv("PRJ1_DB_PASS")
+DATABASE_APPS_MAPPING = {'blog':'blogdb', 'projects':'projectsdb', 'app3':'db3', 'app4':'db4'}
+DATABASE_ROUTERS = ['blog.router.CheckerRouter']
+DATABASES_USER='psqladmin'
+DATABASES_PASS='Ubub^6yhn'
+
+print ("DATABASE_ROUTERS = ",DATABASE_ROUTERS)
+print("DATABASES_USER = " ,DATABASES_USER)
+print("DATABASES_PASS = ",DATABASES_PASS)
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'personal_portfolio', 
+        'USER': DATABASES_USER, 
+        'PASSWORD': DATABASES_PASS,
+        'HOST': '127.0.0.1', 
+        'PORT': '5432',
+    },
+    'blogdb': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'personal_portfolio_blog', 
+        'USER': DATABASES_USER, 
+        'PASSWORD': DATABASES_PASS,
+        'HOST': '127.0.0.1', 
+        'PORT': '5432',
+    },
+    'projectsdb': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'personal_portfolio', 
+        'USER': DATABASES_USER, 
+        'PASSWORD': DATABASES_PASS,
+        'HOST': '127.0.0.1', 
+        'PORT': '5432',
+    }
+
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/2.1/ref/settings/#auth-password-validators
@@ -129,4 +166,4 @@ USE_TZ = True
 
 STATIC_URL = "/static/"
 STATICFILES_DIRS = ( os.path.join(BASE_DIR,'static/'),os.path.join(BASE_DIR2,'static/'),)
-print ("\n\n************* STATICFILES_DIRS= ",STATICFILES_DIRS)
+# print ("\n\n************* STATICFILES_DIRS= ",STATICFILES_DIRS)
