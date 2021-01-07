@@ -1,3 +1,9 @@
+https://play.pixelblaster.ro/blog/2016/06/13/how-to-use-pgloader-to-migrate-sqlite-database-to-postgresql/
+
+
+pgloader sqlite:///home/ub1/.venvs/venv/repo/rp-portfolio-rtl2/db.sqlite3 postgresql://psqladmin:passs@localhost/personal_portfolio_blog with include drop, create tables, create indexes, reset sequences  set work_mem to '16MB', maintenance_work_mem to '512 MB';
+or 
+pgloader pgloadercommand.txt
 
 export PRJ1_DB_USER='psqladmin'
 export PRJ1_DB_PASS='Ubub^6yhn'

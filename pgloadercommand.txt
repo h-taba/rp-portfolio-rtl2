@@ -1,0 +1,11 @@
+load database
+
+     from sqlite:///home/ub1/.venvs/venv/repo/rp-portfolio-rtl2/db.sqlite3 
+
+     into postgresql://psqladmin:PAASSS@localhost/personal_portfolio
+
+ with include drop, quote identifiers, create tables, create indexes, reset sequences,no truncate, create tables, downcase identifiers
+
+  set work_mem to '256MB', maintenance_work_mem to '512 MB';
+  
+  
